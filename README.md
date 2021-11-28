@@ -1,3 +1,6 @@
 # 🌐 Website
-Basic standing website for Ghost.  
-https://ghost.cool/
+BetterGhost Website 
+http://betterghost.cf/
+
+
+Original Website: https://ghost.cool/
