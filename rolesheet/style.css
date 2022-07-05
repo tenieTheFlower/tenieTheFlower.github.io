@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;  
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    margin: 0px;
+    overflow: overlay;
+    background-color: #0e1418;
+    color: white;
+}
+
+h1,h2,h3,h4,h5 {
+    text-transform: uppercase;
+}
+
+h1,h2,h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .center {
+      width: 30rem;
+  }
+}
+
+@media screen and (max-width: 749px) and (min-width: 550px) {
+  .center {
+      width: 25rem;
+  }
+}
+
+@media screen and (max-width: 549px) and (min-width: 375px) {
+    .center {
+        width: 20rem;
+    }
+}
+  
+@media screen and (max-width: 374px) {
+    .center {
+        width: 17rem;
+    }
+}
+
+.container {
+    margin-right: auto;
+    margin-left:  auto;
+    max-width: 800px;
+    padding-right: 10px;
+    padding-left:  10px;
+}
+
+.title {
+    margin: 0px;
+}
+
+.moto {
+    margin-top: 4px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.button {
+    color: white;
+    background-color: #3B78FF;
+    padding: .5rem .75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color .25s;
+    border: none;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: #1f5fe7;  
+}
+
+.blue-gradient {
+    background: rgb(59,120,255);
+    background: linear-gradient(140deg, rgba(59,120,255,1) 22%, rgba(31,95,231,1) 100%);
+}
+
+.blue-gradient-text {
+    background: rgb(59,120,255);
+    background: linear-gradient(140deg, rgba(59,120,255,1) 22%, rgba(31,95,231,1) 100%);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content {
+    margin-top: 100vh;
+}
+
+.grid,
+.grid-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0rem;
+  }
+  
+  .grid .item,
+  .grid-custom .item {
+    margin: 8px;
+  }
+
+  @media (min-width: 600px) {
+    .grid { 
+      grid-template-columns: repeat(2, 1fr);  
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .grid { 
+      grid-template-columns: repeat(3, 1fr); 
+    }
+    .grid-custom { 
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+
+  .chevron {
+    transform: scale(2);
+    transition: transform .25s, color .25s;
+  }
+  
+  .chevron:hover {
+    transform: scale(2.15);
+  }
+
+  @keyframes chevronBob {
+    to {
+      top: 40vh;
+    }
+  }
+  
+  .chevron-wrapper {
+    position: absolute; 
+    top: 35vh; 
+    left: 50%;
+    animation: chevronBob infinite;
+  }
+
+.card {
+    background-color: #0000002b;
+    border-radius: 10px;
+    text-align: left;
+    transition: all .25s;
+}
+
+.card-nohover {
+  background-color: #0000002b;
+  border-radius: 10px;
+  text-align: left;
+  transition: all .25s;
+}
+
+.card:hover {
+    background-color: rgb(31,95,231);  
+    transform: translateY(-4px);
+    box-shadow: 0 4px 15px 2px rgba(0, 0, 0, 0.384);
+}
+
+.card-content {
+    padding: 1.2rem;
+}
+
+.fa-star, .fa-star-half-alt {
+    color: #ffc864!important;
+}
+
+.star-half {
+    background: rgb(255,200,100);
+    background: linear-gradient(90deg, rgba(255,200,100,1) 50%, rgba(0,0,0,0) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+.footer {
+  background-color: black!important;
+  width: 100%;
+}
+
+code {
+  background-color: #00000085;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.bigcodeblock {
+  background-color: #00000085;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+@media screen and (min-width: 600px) {
+  .reviewsBottomWave {
+    z-index: -10; margin-top: -85px; position: absolute;
+  }  
+}
+
+@media screen and (max-width: 570px) {
+  #footerbannerimg {
+    width: 100%;
+  }
+}
+
+.helpCardWrapper {
+  transition: all .25s;
+}
+
+.helpCardWrapper:hover {
+  background-color: rgba(59,120,255,1);  
+  border-radius: 5px;
+}
+
+.helpCard {
+  opacity: 100;
+  transition: all .25s;
+}
+
+.helpCard:hover {
+  opacity: 0;
+}
+
+.helpCardHover {
+  z-index: 999;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+  transition: all .25s;
+}
+
+.helpCardHover:hover {
+  opacity: 100;
+}
+
+/* Copy this @keyframes block to your CSS*/
+@keyframes ghostLoadingIconAnimation {
+  0.0%  {transform: translateY(500px);}
+  100%  {transform: translateY(0px) rotate(360deg) scale(0);}
+  15.0% {transform: translateY(0px);}
+  27.6% {transform: translateY(0px) rotate(360deg) scale(0);}
+}
+
+#ghostLoadingIcon{
+  font-size: 8rem;
+  animation: ghostLoadingIconAnimation 10s ease 0s normal none;
+  transition: all .25s;
+}
+
+#loadingScreen {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background: #3A7BFF;
+  transition: all .25s;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;  
+  padding: 20px 20px;
+  background-color: #0a0e11;
+}
+
+.navigation .watermark {
+  font-weight: 800;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navigation .links {
+  font-size: 80%;
+}
+
+.navigation .links a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0px;
+  padding: 15px 18px;  
+  border-radius: 8px;
+}
+
+.navigation .links a:hover {
+  background-color: #12191f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff26;
+    border-radius: 10px;
+    transition: background .25s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff3d;
+}
